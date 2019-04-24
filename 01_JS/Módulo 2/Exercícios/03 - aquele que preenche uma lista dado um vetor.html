@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Módulo 3 - Exercício 2</title>
+    </head>
+    <body>
+        <ul id="ul"></ul>
+
+        <script>
+            var nomes = ["José Roberto", "Roberta", "Rafael", "Nelson"];
+
+            var listElement = document.getElementById("ul");
+
+            for(nome of nomes){
+                var liElement = document.createElement('li');
+                var textElement = document.createTextNode(nome);
+
+                liElement.appendChild(textElement);
+                listElement.appendChild(liElement);
+            }
+        </script>
+    </body>
+</html>

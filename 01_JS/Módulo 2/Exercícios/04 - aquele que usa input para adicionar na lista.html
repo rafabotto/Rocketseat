@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Módulo 3 - Exercício 2</title>
+    </head>
+    <body>
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+        <ul></ul>
+
+        <script>
+            var inputElement = document.querySelector('input');
+            var listElement = document.querySelector('ul');
+
+            function addItem(text){
+                var liElement = document.createElement('li');
+                var textElement = document.createTextNode(text);    
+                liElement.appendChild(textElement);
+                listElement.appendChild(liElement);
+            }
+            function adicionar(){
+                addItem(inputElement.value);
+                inputElement.value = "";
+                inputElement.focus();
+            }
+        </script>
+    </body>
+</html>

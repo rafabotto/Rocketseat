@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Módulo 1 - Exercício 5</title>
+    </head>
+    <body>
+        <script>
+            function exibeHabilidades(usuarios){
+                for(usuario of usuarios){
+                    console.log("O " + usuario.nome + " possui as habilidades: " + usuario.habilidades.join(", "));
+                }
+            }
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+            exibeHabilidades(usuarios);
+        </script>
+    </body>
+</html>
