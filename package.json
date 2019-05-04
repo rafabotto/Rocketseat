@@ -12,6 +12,6 @@
     "webpack-cli": "^3.3.1"
   },
   "scripts": {
-    "dev": "webpack --mode=development -w"
+    "dev": "webpack-dev-server --mode=development"
   }
 }
